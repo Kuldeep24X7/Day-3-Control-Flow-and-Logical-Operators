@@ -2,15 +2,32 @@
 year = int(input("Which year do you want to check? "))
 # 🚨 Don't change the code above 👆
 
-#First *fork* your copy. Then copy-paste your code below this line 👇
-#Finally click "Run" to execute the tests
+#Write your code below this line 👇
 
 
 if year%4 != 0: # IF year  divide 4 not equal to 0 then it is not a leapr year else the second condition.
   print("Not leap year.")
 elif year %100 !=0: # if year divide 100 not equal to 0 then leap year else the second condition.
-  print("Leap year.abs")
+  print("Leap year")
 elif year % 400 ==0: # if year divide 400 equal to 0 then leap year else the last condition.
   print("Leap year.")
 else:
   print("Not leap year.")
+
+
+#TEACHER CODE 
+
+  if year % 4 ==0:
+    if year % 100 ==0:
+      if year % 400 ==0:
+        print("Leap Year ")
+      else:
+        print("Not Leap Year")
+
+    else:
+      print("Leap year")
+  else:
+    print("Not leap year")
+
+
+
